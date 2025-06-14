@@ -11,8 +11,16 @@
 <body>
 
   <header class="header">
-    <div class="logo">MHA Engineering & Solutions</div>
-    <nav class="nav">
+    <div class="logo">
+      <span class="logo-main">MHA</span><br>
+      <span class="logo-sub">Engineering & Solutions</span>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <nav class="nav" id="nav">
       <ul>
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Servicios</a></li>
@@ -25,16 +33,15 @@
 
   <section class="hero">
     <div class="hero-content">
-      <h1 class="highlight">Landing Page</h1>
-      <h2>Full HD Resolution</h2>
-      <p>
-        Ofrecemos soluciones innovadoras en Data Science, Machine Learning, IA Generativa y Flexografía.
-      </p>
-      <a href="#" class="cta-button">Leer más</a>
+        <h1 class="highlight">Impulsamos tu futuro</h1>
+        <h2>Innovación con Inteligencia Artificial</h2>
+        <p>
+            Transformamos ideas en soluciones inteligentes para tu empresa.
+        </p>
+        <a href="#" class="cta-button">Descubre más</a>
     </div>
   </section>
 
-  <!-- Sección de Contacto (solo info) -->
   <section class="contact-section">
     <h2>Contáctanos</h2>
     <p>¿Tienes preguntas o comentarios? ¡Aquí tienes nuestros datos de contacto!</p>
@@ -42,8 +49,12 @@
     <div class="contact-info">
       <div class="info-box">
         <i class="fab fa-whatsapp"></i>
-        <p>+57 320 805 2459</p>
-      </div>
+        <p>
+            <a href="https://wa.link/tri1dr" target="_blank" rel="noopener noreferrer">
+            +57 320 805 2459
+            </a>
+        </p>
+        </div>
       <div class="info-box">
         <i class="fas fa-envelope"></i>
         <p>projects@mha-ia.com</p>
@@ -55,5 +66,12 @@
     </div>
   </section>
 
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
